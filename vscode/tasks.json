@@ -1,0 +1,21 @@
+{
+    // task.json记录编译参数
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "compile",
+            "type": "shell",
+            "command": "g++",
+            "args": [
+                "-g",
+                "${workspaceFolder}/${fileBasenameNoExtension}.cpp",
+                "-o",
+                "${workspaceFolder}/${fileBasenameNoExtension}.out"
+            ],            
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            }
+        }
+    ]
+}
