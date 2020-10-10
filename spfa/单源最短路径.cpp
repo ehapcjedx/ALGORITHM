@@ -1,4 +1,5 @@
-//luogu p4779
+// luogu p4779
+// dijkstra板子
 
 #include <cstdio>
 #include <queue>
