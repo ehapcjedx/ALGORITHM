@@ -1,9 +1,12 @@
-//luogu p1802
-//5倍经验日
+// luogu p1802
+// 01背包变形
 
 #include <cstdio>
 #include <algorithm>
 using namespace std;
+const int N = 1010;
+
+long long dp[N];
 
 int main()
 {
@@ -11,7 +14,6 @@ int main()
     int lose, win, use;
 
     scanf("%d%d", &n, &x);
-    long long dp[x+5] = {0};
 
     for(int i=0; i<n; i++)
     {
